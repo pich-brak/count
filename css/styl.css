@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.countainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 600px;
+    grid-template-areas: 'nav nav nav'
+                        'sidebar1 main Sidebar2'
+                        'sidebar1 content1 Sidebar2 '
+                        'sidebar1 content2  Sidebar2 '
+                        'footer footer footer';
+}
+.countainer>div{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    background: #0AE075;
+    grid-area: nav;
+}
+.sidebar1{
+    background: #09AA59;
+    grid-area: sidebar1;
+}
+.main{
+    background: #0AC869;
+    grid-area: main;
+}
+.content1{
+    background: #088D4B;
+    grid-area: content1;
+}
+.content2{
+    background: #077c41;
+    grid-area: content2;
+}
+.Sidebar2{
+    background: #066E3A;
+    grid-area: Sidebar2;
+}
+.footer{
+    background: #044B28;
+    grid-area: footer;
+}
